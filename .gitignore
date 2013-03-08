@@ -2,11 +2,12 @@ Thumbs.db
 
 #Ignore files build by Visual Studio
 
+*.suo
 [Bb]in/
 _bin/
 [Oo]bj/
 
 _ReSharper*/
-[Tt]est[Rr]esult*
+*.*.user
 
 !tools/
