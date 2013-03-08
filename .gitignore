@@ -1,31 +1,12 @@
 Thumbs.db
 
 #Ignore files build by Visual Studio
-*.obj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-[Bb]in
+
+[Bb]in/
 _bin/
-[Dd]ebug/
-[Rr]elease/
-*.lib
-*.sbr
-*.chw
-obj/
+[Oo]bj/
+
 _ReSharper*/
 [Tt]est[Rr]esult*
-temp/
+
+!tools/
