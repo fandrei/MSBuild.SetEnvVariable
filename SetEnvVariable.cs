@@ -20,7 +20,6 @@ namespace MSBuild.SetEnvVariable
 			set { _name = value; }
 		}
 
-		[Required]
 		public string Value
 		{
 			get { return _value; }
