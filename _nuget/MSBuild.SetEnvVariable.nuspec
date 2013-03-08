@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>MSBuild.SetEnvVariable</id>
+    <title>MSBuild. Set Environment Variable</title>
+    <version>1.0.0.0</version>
+    <authors>CityIndex Ltd, Andrei Faber</authors>
+    <description>Allows to set environment variables in MSBuild scripts. Use it like this:
+
+&lt;UsingTask TaskName=&quot;SetEnvVariable&quot; AssemblyFile=&quot;$(YourPath)\MSBuild.SetEnvVariable.dll&quot;/&gt;
+
+&lt;SetEnvVariable Name=&quot;VariableName&quot; Value=&quot;YourValue&quot;/&gt;</description>
+    <language>en-GB</language>
+    <licenseUrl>https://github.com/fandrei/MSBuild.SetEnvVariable/raw/master/LICENSE.txt</licenseUrl>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\MSBuild.SetEnvVariable.dll" target="lib\net40"/>
+    <file src="..\bin\Release\MSBuild.SetEnvVariable.pdb" target="lib\net40"/>
+  </files>
+</package>
