@@ -9,7 +9,8 @@
 
 &lt;UsingTask TaskName=&quot;SetEnvVariable&quot; AssemblyFile=&quot;$(YourPath)\MSBuild.SetEnvVariable.dll&quot;/&gt;
 
-&lt;SetEnvVariable Name=&quot;VariableName&quot; Value=&quot;YourValue&quot;/&gt;</description>
+&lt;SetEnvVariable Name=&quot;VariableName&quot; Value=&quot;YourValue&quot;/&gt;
+Environment variables persist only within the same Target element.</description>
     <language>en-GB</language>
     <licenseUrl>https://github.com/fandrei/MSBuild.SetEnvVariable/raw/master/LICENSE.txt</licenseUrl>
   </metadata>
