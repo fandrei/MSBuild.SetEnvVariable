@@ -13,6 +13,7 @@
 Environment variables persist only within the same Target element.</description>
     <language>en-GB</language>
     <licenseUrl>https://github.com/fandrei/MSBuild.SetEnvVariable/raw/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/fandrei/MSBuild.SetEnvVariable</projectUrl>
   </metadata>
   <files>
     <file src="..\bin\Release\MSBuild.SetEnvVariable.dll" target="lib\net40"/>
