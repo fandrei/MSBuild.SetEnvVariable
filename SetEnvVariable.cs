@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
@@ -12,8 +8,10 @@ namespace MSBuild.SetEnvVariable
 	{
 		private string _name;
 		private string _value;
+	    private EnvironmentVariableTarget _target = EnvironmentVariableTarget.Process;
 
-		[Required]
+
+	    [Required]
 		public string Name
 		{
 			get { return _name; }
@@ -26,11 +24,17 @@ namespace MSBuild.SetEnvVariable
 			set { _value = value; }
 		}
 
+	    public string Target
+	    {
+            get { return _target.ToString(); }
+            set { _target = (EnvironmentVariableTarget)Enum.Parse(typeof(EnvironmentVariableTarget), value); }
+	    }
+
 		public override bool Execute()
 		{
 			try
 			{
-				Environment.SetEnvironmentVariable(_name, _value);
+				Environment.SetEnvironmentVariable(_name, _value, _target);
 				return true;
 			}
 			catch (Exception exc)
